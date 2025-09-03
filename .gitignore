@@ -1,120 +1,60 @@
-# AgriPlay - Gamified Agriculture Learning Platform
-# .gitignore file
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# Python
-__pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-MANIFEST
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
 
-# Virtual environments
-venv/
-env/
-ENV/
-.env
-.venv
+# testing
+/coverage
 
-# Database files
-*.db
-*.sqlite
-*.sqlite3
-agriplay.db
+# production
+/build
+/dist
 
-# FastAPI/Uvicorn
-.env
+# misc
+.DS_Store
 .env.local
-.env.production
-.env.staging
+.env.development.local
+.env.test.local
+.env.production.local
 
-# Node.js and npm
-node_modules/
+# logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-.pnpm-debug.log*
+pnpm-debug.log*
 
-# React/Vite build output
-dist/
-build/
-.vite/
+# IDEs and editors
+/.vscode/
+/.idea/
+*.swp
+*.swo
 
-# Environment variables
+# OS generated files
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+
+# Environment variables (except examples)
 .env
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
 
-# IDE and Editor files
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
+# TypeScript
+*.tsbuildinfo
 
-# OS generated files
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
+# ESLint cache
+.eslintcache
 
-# Logs
-logs/
-*.log
+# Playwright
+test-results/
+playwright-report/
+playwright/.cache/
 
-# Coverage reports
-htmlcov/
-.coverage
-.coverage.*
-coverage.xml
-
-# Testing
-.pytest_cache/
-.coverage
-
-# Temporary files
-*.tmp
-*.temp
-
-# Package files
-*.tgz
-*.tar.gz
-
-# Jupyter Notebook
-.ipynb_checkpoints
-
-# IPython
-profile_default/
-ipython_config.py
-
-# Docker
-.dockerignore
-
-# Deployment
-deploy/
-deployment/
-
-# Secrets and keys
-*.pem
-*.key
-secrets/
+# Vitest
+coverage/
